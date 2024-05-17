@@ -19,5 +19,8 @@ describe("Iteration 2", () => {
       expect(divide()).toEqual(undefined);
       expect(divide(undefined, 1)).toEqual(undefined);
     });
+    it("should return inifinity when dividing by zero", () => {
+      expect(divide(10, 0)).toEqual(Infinity);
+    });
   });
 });
